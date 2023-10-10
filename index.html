@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <title>Inscrição</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/ico.jpg" type="image/x-icon">
+    </head>
+    <body>
+        <section id="info">
+            <h1>Crie seu perfil</h1>
+            <section id="inputs">
+                <div class="sesao">
+                <h2>Nome:</h2>
+                <input type="text" name="cadas" id="nom" placeholder="Digite seu nome">
+                </div>
+                <div class="sesao">
+                <h2>E-mail:</h2>
+                <input type="email" name="cadas" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="sesao">
+                <h2>Telefone:</h2>
+                <input type="tel" name="cadas"id="numero" placeholder="Digite seu telefone" maxlength="11" oninput="formatarTelefone(this)">
+                </div>
+                <div class="sesao">
+                <h2>Senha:</h2>
+                <input type="password" name="cadas" id="Senha" placeholder="Digite sua senha">
+                </div>
+            </section>
+            <div class="sesao descr">
+                <h2>Descrição:</h2>
+                <textarea name="cadas" id="desc" cols="30" rows="10" placeholder="Digite sua Descrição"></textarea>
+            </div>
+            <button onclick="aplicar()">Enviar</button>
+        </section>
+        <section id="back">
+            <div id="conteudo">
+                <div id="lado">
+                    <img src="img/ico.jpg" alt="icon" width="150px">
+                    <div class="side">
+                        <h4>Nome:</h4>
+                        <h3 id="no">Exemplo da Silva</h3>
+                        <h4>E-mail:</h4>
+                        <h3 id="em">Exemplo.com</h3>
+                        <h4>Telefone:</h4>
+                        <h3 id="tel">(12) 34567-8901</h3>
+                    </div>
+                </div>
+                <h4>Descrição:</h4>
+                <h3 id="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nisi velit suscipit voluptas quisquam. Ea quod animi quasi nam soluta ab earum reiciendis officia labore sint, omnis ex vel deleniti!</h3>
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+    </body>
+</html>
